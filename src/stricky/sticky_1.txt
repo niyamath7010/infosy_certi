@@ -1,0 +1,138 @@
+data structure is a perticular way to store a data . so we use data structure in our application becouse to statucture out data in good way so that our application should not be hang or any kinds of issue in our application
+
+basic data structures are ARRAY , STACK , QUEUE , SEARCHING AND SORTING , REGURSION  and advance concept like tree graph
+
+there are two type of data structure :
+ 1. leaner data strcture and 2 . non learner data strcuture
+
+In leaner we have array stack queue queue linked list ,
+In non leeaner we have graph ,  hash map and more concpet
+
+_____________________________________
+
+SEO : search Engine Optimisation  , is responsible for the performance of your project , to make our project intresting for search engine to rank our project.  for example : an correct path to reach out to the customer.
+one of the reason for our project doent rack becouse we haven't plased any data in mata data
+Original, relevant and unique content on each page is a pillar of good SEO.
+
+
+HTML is the basis of the vast majority of web pages and is one of the most essential parts of technical SEO. With the help of HTML elements, SEOs can relay information on web pages both to people and search engine bots.
+
+
+BASIC SEO ELEMENTTS: 
+kEYWORLD : Keyword research is the first step to a successful SEO strategy.
+Meta tags. Meta tags still play a vital role in SEO. ...
+Product images.
+Content
+
+
+
+In React we have a librarry called react helemet which help our react app SEO frindly. they help use to set dynamic meta tags such as title , discription , keyword ect in our application
+
+
+
+
+_______________________cross browser compatibility _____________________
+
+when we develop an project .... due to different serach engine has different compatibility , where the css will get changed in diffrent different formats , 
+
+
+
+
+
+
+
+
+______________________REACT NATIVE_________________
+
+React native is js libarary mostly used to develop mobiles app , it provides smooth and responsive interface , and it will reduce load time , it is also faster and cheapter to build react native app.. we can build andriod based and iso based app with one code based , with one code based we can create hybrid application
+
+import React, { useState } from "react";
+import { Button, Image, StyleSheet,FlatList, Text, View , TextInput , TouchableOpacity} from "react-native";
+
+
+
+function App () {
+
+  const [todo,setTodo]=useState("")
+  const [mytodo,setMytodo]=useState([])
+
+  const displayItem=(text)=>{
+    setTodo(text)
+  }
+
+  const getItems=()=>{
+    if(!todo) return;
+    setMytodo([...setMytodo, { text:todo}])
+    setTodo("")
+  }
+
+    return (
+      <View style={styles.contianer}>
+        
+          <Text style={styles.textStyle}>TODO APP</Text>
+          <br/>
+          <TextInput
+            style={styles.input}
+          placeholder="enter your todo" onChangeText={displayItem} value={todo} />
+          <TouchableOpacity onPress={()=>getItems}>
+            <Text>
+              Add
+            </Text>
+          </TouchableOpacity>
+          <FlatList>
+            
+          </FlatList>
+      </View>
+    )
+
+}
+
+const styles = StyleSheet.create({
+  contianer:{
+    backgroundColor:"pink",
+    height:"100vh"
+  },
+  textStyle:{
+    fontSize:"30px",
+    textAlign:"center"
+  },
+  input:{
+    border:"1px solid black",
+    width:"40vw",
+    textAlign:"center",
+    marginLeft:"130px"
+  }
+});
+
+export default App;
+
+
+____________________stripe payment gateway in our react application __________________
+
+sripe gives us pre-define code which we can implement on our code and use it..
+in stripe doc we need to install file and for the back end we need to install php
+
+____________________________BOLD AND STRIG TAG DIFFRANCE IN HTML__________________
+
+
+
+
+
+_______________________I AND EM TAG diffreance _______________________
+
+
+
+
+
+____________PSESUDO CLASS IN CSS ___________________
+
+
+_________________What are srting method__________________
+
+strings methods are split slice toUppercase , toLowerCase , replace , length , concat , repalce all
+
+____________what is call apply and blind____________________________-
+
+
+
+___________________USEREDUCER IN REACT _________
