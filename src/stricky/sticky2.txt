@@ -1,0 +1,137 @@
+hosting has an relationship with the momory managemnet , for example if we have an variable which is not declared yet , that variable will move to global.  , what ever code is not declared it will be saved in global , for example :
+
+console.log(a);
+var a=0;   it will gives us a output undefine , but the value will be saved in js engine that a variable nams is delacred
+
+
+_____________________
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+
+Because of the event queue in JavaScript, the setTimeout callback function is called after the loop has been executed. Since the variable i in the first loop was declared using the var keyword, this value was global. During the loop, we incremented the value of i by 1 each time, using the unary operator ++. By the time the setTimeout callback function was invoked, i was equal to 3 in the first example.
+
+In the second loop, the variable i was declared using the let keyword: variables declared with the let (and const) keyword are block-scoped (a block is anything between { }). During each iteration, i will have a new value, and each value is scoped inside the loop.
+
+
+_________________________________
+
+context api:
+
+// import Child2 from "./Child2"
+import {Myname} from "./App"
+export default function Child(){
+  return(
+    <>
+        <Myname.Consumer>
+  {data=> <h3>{data}</h3>  }
+        </Myname.Consumer>
+    </>
+  )
+}
+
+____________________________
+currying is a function that takes one argumnrt at the time and returns a new function expecting the next arugement
+
+
+infinite currying :
+function add(a){
+  return function(b){
+    if(b) return add (a+b);
+    return a;
+  }
+}
+
+
+var res=add(4)(4)(5)()
+
+console.log(res)
+
+
+//now our addtional function became to smart
+
+
+
+__________________________________________
+
+
+event loop:
+
+event loop has 3 importent concpt
+1, call stack
+2 task queue (call back queue)
+micro task queue
+
+
+a stack is an data structure which means how efficiantly manage out data , stack is also one of the data structure.
+
+call stack :
+
+mechanism to keep tract of the function currently running and what function are called by this function : we can say as first in last out , we uses this stack to track the function call , it will check it the function is called or not , or else it is going to call another function or not.
+
+task queue: 
+
+as a name suggest some talk is beeing in quaue which haven't rendered yet :
+
+for example : if there is a function :
+function callMe(){
+  setTimeout(()=>{
+    console.log("hello")
+  },4000)
+  console.log("world")
+}
+
+callMe()
+
+
+first everyting is go to stack will render console log first , but the sell time out will render after 3 second , so it will be in queue for three second and again stack will check any thing is there in queue or not then it will get rendered
+
+and nother eample if we have an event handler in button untill we clicked on button the task in the button will be in queued :
+
+microtask : 
+it also the queue but it doent work for settime out or event handler , specially it eill work for our api call.
+
+
+______________________________
+
+deboucing  : for example this is usefull in the e comerce site like if we search someting in search bar , we get list what we search,, what the diiferance is when we stop typing thn only the fuction eill called and gives us output
+
+
+
+and throttling we can say that the user is filling the form what if he cllicked the sumitted button twice, two data will be stored in on databata, with the help for thottling we can manage it by disible the button for a while, so that the button cannot be click twice.n 
+
+
+
+____________
+
+babel is a transpiler which convert jsx into javascriprt object it help brower to understand :
+
+
+_________
+
+control and un control componet in react  :In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself.
+
+can we create an coustom hooks in reacts  :yes we can we have an seprate library which is react -use , and there are soo many hooks are there as we can customize like use debouse , use local storage , use full screen
+
+what is strict mood in react : most of the times our application run even tough if there is a error....so using strick methods shows all the error and make us to debug easily.
+
+routing : 
+
+we need to install react router and in index page we need to import browser router , Browser is used to conect with own brower url
+
+
+react fragment: it is used to create a layer with out an div tag,,it we use div tag we will get an layer storage in our dom , it will be little bit faster as it not createing an extra notes
+
+
+redux ;redux has 3 main concpet which is action reducer store ,  components dispatch the action to the reducers , and reducer has the power to change the central thing and they have to change to centre store , its trigger to subscribsion and passed updated states an props
+
+
+useEffect : with the help for useeffect we can tell React that your component needs to do something after render;
+The useEffect Hook allows you to perform side effects in your components.
+
+higher order component (HOC)  is an component which take another compoent as a props and return seprate component , which means compoent itselft take input and gives output as well

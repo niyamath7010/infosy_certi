@@ -1,0 +1,88 @@
+ what are the feature of es6 :
+
+
+var let const ,, and why is this happenning and wat is hosting
+
+rest and spread operator; and exampple:
+
+is js is an single thread or multiple therd and why it is a single theard  ;
+
+event loop in js and explain about event loop;  therory pouche so
+
+have u worked with closure js ..yeh bhu therory.
+
+
+function curring and an example. 
+
+eample we can say as :
+
+function curry(a){
+return function(b){
+return function(c){
+return a*b*c
+}
+}
+}
+
+console.log(curry(a)(b)(c))
+
+
+
+_______________________
+
+now wat is an react :
+
+
+what is usestate and props;
+
+so props is used to pass data from child to parent , so than how would u pass parent data to child data;
+
+and how u will do the same with class based component
+
+what are the lfe cycle methods of class based componet in react;
+
+what are the other hooks are there in react
+
+soo u said useselect , so useselect from react or other library,, (useselect is from redux)
+
+and what is redux
+
+and props drilling and more details
+
+
+
+_________________________experinace question
+
+html event bublig and event looping
+
+
+
+is react is one way data binding or two way data binding
+
+do u knw what is higher order components in react js:
+
+usemenu and usecall back in lifecycle and why is used
+
+
+_____________________
+
+what is dom ;
+
+what is differance between absolte and reliative position
+
+differance between ES5 and ES6
+
+ES6 has intoduce new key words as let and const  and arrow function and destructing as well
+
+what are the metods of an array => filter foreach map reduce  ::
+
+differance between for each and map ;
+
+tell mech which version of react u used;
+
+which compeont are better call or function and why
+
+what is usemenu and usecall back
+
+
+what is reduck and contest api
