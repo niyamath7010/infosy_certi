@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import App from './App';
+// import Table from './Table';
+// import Product from './Product';
+// import QualityDiscount from './Quality';
+import AddEmployee from './AddEmployee';
+// import ArrayProps from './ArrayProps';
+// import ChildToProps from './ChildToParent';
+// import Product from './ProductReview/Product';
+// import ProductDetails from './ProductReview/ProductDetails';
+// import Axioss from './Axios';
+// import BootStrapForm from './FormBootsrap';
+import AddDeleteEmployee from './ProductReview/AddDeleteEmplyee';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Product /> */}
+    {/* <Table /> */}
+    {/* <QualityDiscount/> */}
+    {/* <AddEmployee /> */}
+    {/* <ArrayProps /> */}
+    {/* <ChildToProps /> */}
+    {/* <Product /> */}
+    {/* <ProductDetails /> */}
+    {/* <BootStrapForm /> */}
+    {/* <Axioss /> */}
+    <AddDeleteEmployee />
   </React.StrictMode>
 );
 
