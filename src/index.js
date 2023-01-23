@@ -6,14 +6,15 @@ import reportWebVitals from './reportWebVitals';
 // import Table from './Table';
 // import Product from './Product';
 // import QualityDiscount from './Quality';
-import AddEmployee from './AddEmployee';
+// import AddEmployee from './AddEmployee';
+import Todo from './todo';
 // import ArrayProps from './ArrayProps';
 // import ChildToProps from './ChildToParent';
 // import Product from './ProductReview/Product';
 // import ProductDetails from './ProductReview/ProductDetails';
 // import Axioss from './Axios';
 // import BootStrapForm from './FormBootsrap';
-import AddDeleteEmployee from './ProductReview/AddDeleteEmplyee';
+// import AddDeleteEmployee from './ProductReview/AddDeleteEmplyee';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +30,8 @@ root.render(
     {/* <ProductDetails /> */}
     {/* <BootStrapForm /> */}
     {/* <Axioss /> */}
-    <AddDeleteEmployee />
+    {/* <AddDeleteEmployee /> */}
+    <Todo/>
   </React.StrictMode>
 );
 
